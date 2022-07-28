@@ -47,11 +47,26 @@
       "left-space profile right-space" 2fr
       "left-space post right-space" 1fr
       "left-space main right-space" 10fr /
-      1fr 5fr 1fr ;
+      4fr 500px 4fr ;
   
       grid-gap: 20px;
    }
    .feed, .learning, .news, .recent, .organisation{
+      display: none;
+   }
+ }
+ @media screen and (max-width: 600px) {
+   .container {
+      grid-template: 
+      " header " 100px
+      " profile " 2fr
+      " post " 1fr
+      " main " 10fr /
+       1fr  ;
+  
+      grid-gap: 20px;
+   }
+   .feed, .learning, .news, .recent, .organisation, .right-space, .left-space{
       display: none;
    }
  }

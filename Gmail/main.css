@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.container {
+    height:1080px;
+    display: grid;
+    grid-template: 
+    "header header header header" 80px
+    "left-menu main right-menu shortcuts" 1fr /
+    2fr 4fr 2.5fr 60px ;
+ }
+
+ div.left-menu {
+    grid-area: left-menu;
+    background-color: aqua;
+ }
+ div.header {
+    grid-area: header;
+    background-color: blueviolet;
+ }
+ div.main {
+    grid-area: main;
+    background-color: teal
+ }
+ div.right-menu {
+    grid-area: right-menu;
+    background-color: aquamarine
+ }
+ div.shortcuts {
+    overflow-wrap: break-word;
+    grid-area: shortcuts;
+    background-color: bisque;
+ }

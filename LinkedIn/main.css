@@ -19,9 +19,41 @@
     "left-space profile main news right-space" 1fr
     "left-space organisation main learning right-space" 1fr
     "left-space recent main feed right-space" 2fr /
-    5fr 3fr 8fr 5fr 5fr ;
+    5fr 240px 400px 240px 5fr ;
 
     grid-gap: 20px;
+ }
+
+ @media screen and (max-width: 1000px) {
+   .container {
+      grid-template: 
+      "header header header  header" 100px
+      "left-space profile post right-space" 1fr
+      "left-space profile main right-space" 1fr
+      "left-space organisation main right-space" 1fr
+      "left-space recent main right-space" 2fr /
+      5fr 240px 400px 5fr ;
+  
+      grid-gap: 20px;
+   }
+   .feed, .learning, .news{
+      display: none;
+   }
+ }
+ @media screen and (max-width: 750px) {
+   .container {
+      grid-template: 
+      "header header header" 100px
+      "left-space profile right-space" 2fr
+      "left-space post right-space" 1fr
+      "left-space main right-space" 10fr /
+      1fr 5fr 1fr ;
+  
+      grid-gap: 20px;
+   }
+   .feed, .learning, .news, .recent, .organisation{
+      display: none;
+   }
  }
 
  div.left-space {

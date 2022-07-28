@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    line-height: 100px;
+}
+
+.container {
+    height: 1000px;
+    display: grid;
+    grid-template: 
+    "header header header header header" 100px
+    "left-space profile post news right-space" 1fr
+    "left-space profile main news right-space" 1fr
+    "left-space organisation main learning right-space" 1fr
+    "left-space recent main feed right-space" 2fr /
+    5fr 3fr 8fr 5fr 5fr ;
+
+    grid-gap: 20px;
+ }
+
+ div.left-space {
+    grid-area: left-space;
+    background-color: white;
+ }
+ div.header {
+    grid-area: header;
+    background-color: beige;
+ }
+ div.profile {
+    grid-area: profile;
+    background-color: coral;
+ }
+ div.post {
+    grid-area: post;
+    background-color: cadetblue;
+ }
+ div.news {
+    grid-area: news;
+    background-color: greenyellow;
+ }
+ div.organisation {
+    grid-area: organisation;
+    background-color: grey;
+ }
+ div.main {
+    grid-area: main;
+    background-color: hotpink;
+ }
+ div.learning {
+    grid-area: learning;
+    background-color: teal;
+ }
+ div.recent {
+    grid-area: recent;
+    background-color: thistle;
+ }
+ div.feed {
+    grid-area: feed;
+    background-color: rgb(23, 0, 128);
+ }
+ div.right-space {
+    grid-area: right-space;
+    background-color: white;
+ }

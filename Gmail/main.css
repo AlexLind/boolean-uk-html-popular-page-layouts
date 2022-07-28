@@ -29,6 +29,7 @@
  }
  div.main {
     grid-area: main;
+    grid-auto-rows: 100px;
     background-color: teal
  }
  div.right-menu {

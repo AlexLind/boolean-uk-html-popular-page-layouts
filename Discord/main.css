@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.container {
+    height: 1080px;
+    display: grid;
+    grid-template-columns: 50px 200px 1fr;
+    overflow-wrap: break-word;
+}
+
+div.channels {
+    background-color: #e3e5e8;
+}
+div.channel {
+    background-color: #f2f3f5;
+}
+div.main {
+    background-color: #ffffff;
+}
